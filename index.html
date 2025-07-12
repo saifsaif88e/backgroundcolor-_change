@@ -1,0 +1,53 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day-1 Backgroud_color_change</title>
+</head>
+<body>
+    <header>this headerc for search content</header>
+    <aside>
+        <div>
+    <ul>categries</ul>
+    <ul>all</ul>
+    <ul>news</ul>
+    <ul>shorts</ul>
+    <ul>subscribe</ul>
+</div>
+</aside>
+<button type="button">click here to change a color</button>  
+ 
+<div>
+    <h1>spidy ruhaiz</h1>
+</div>
+<div>
+    <h2>mighty spidy ruhaiz</h2>
+</div>
+<div>
+    <img src="C:\Users\ADMIN\Pictures\Saved Pictures/ruhiaz.jpeg" alt="photo">
+</div>
+
+<script>
+    //document: using dom to implementation 
+   const button=document.querySelector('button');
+   const body =document.querySelector('body');
+    const color=['blue','black','yellow','green'];
+    function clr(){
+        //i take parseint because 
+        const chnge=parseInt(Math.random()*color.length);
+        body.style.backgroundColor=color[chnge]
+    }
+    body.style.backgroundColor='aqua';
+    //event listner 
+    //first we need to understand which event we want then must ad event by selecting dom and passing
+    //arguments like which event like 'click' event and pass another argument 
+    //when you click what to happened like
+    //i have a function which performe a background color chage...
+    button.addEventListener('click',clr)
+
+   
+</script>
+</body>
+</html>
